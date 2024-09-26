@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connect with Me</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Professional font and gradient background */
+        /* Professional font */
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #1F3A93, #00A8C6);
             color: #fff;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative;
+            background-color: #1F3A93; /* Added a solid background color */
         }
 
-        /* Center container */
+        /* Center container with overlay */
         .container {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
             padding: 40px;
             border-radius: 12px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
             max-width: 380px;
             width: 90%;
             margin: auto;
+            position: relative;
         }
 
         h1 {
@@ -54,10 +55,18 @@
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
         }
 
-        /* Space between icon and text */
-        .social-link i {
-            margin-right: 25px; /* Adjusted margin for clearer separation */
-            font-size: 24px;
+        /* Set all social media icons to the same size */
+        .social-link img {
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* Enlarged size specifically for Twitter X logo */
+        .twitter-x-logo {
+            width: 40px; /* Increased width for larger size */
+            height: 40px;
         }
 
         /* Hover and focus effects for interactivity */
@@ -87,35 +96,166 @@
             .social-link span {
                 font-size: 20px;
             }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect with Me</h1>
+        
+        <!-- Instagram link with custom icon -->
+        <a class="social-link" href="https://www.instagram.com/your_username" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            <span>Instagram</span>
+        </a>
 
-            .social-link i {
-                font-size: 28px;
+        <!-- Updated Twitter icon from Flaticon -->
+        <a class="social-link" href="https://twitter.com/your_username" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter X" class="twitter-x-logo">
+            <span>Twitter (X)</span>
+        </a>
+
+        <!-- Facebook link with custom icon -->
+        <a class="social-link" href="https://www.facebook.com/your_username" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            <span>Facebook</span>
+        </a>
+
+        <!-- WhatsApp link with custom icon -->
+        <a class="social-link" href="https://wa.me/your_whatsapp_number" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            <span>WhatsApp</span>
+        </a>
+    </div>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Me</title>
+    <style>
+        /* Professional font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+            background-color: #1F3A93; /* Added a solid background color */
+        }
+
+        /* Center container with overlay */
+        .container {
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            max-width: 380px;
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            color: #f0f0f0;
+            font-weight: 700;
+        }
+
+        /* Social media link styles */
+        .social-link {
+            background-color: rgba(255, 255, 255, 0.05);
+            margin: 12px 0;
+            padding: 15px 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+            color: #fff;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Set all social media icons to the same size */
+        .social-link img {
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        /* Enlarged size specifically for Twitter X logo */
+        .twitter-x-logo {
+            width: 40px; /* Increased width for larger size */
+            height: 40px;
+        }
+
+        /* Hover and focus effects for interactivity */
+        .social-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.5);
+            outline-offset: 4px;
+        }
+
+        .social-link span {
+            font-size: 18px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive adjustments for larger screens */
+        @media (min-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .social-link span {
+                font-size: 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Connect with Collector of Parvathipuram Manyam on</h1>
-        <a class="social-link" href="https://www.instagram.com/your_username" target="_blank">
-            <i class="fab fa-instagram"></i>
+        <h1>Connect Collecter manyam on</h1>
+        
+        <!-- Instagram link with custom icon -->
+        <a class="social-link" href="https://www.instagram.com/collectormanyam/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
             <span>Instagram</span>
         </a>
-        <a class="social-link" href="https://twitter.com/your_username" target="_blank">
-            <i class="fab fa-twitter"></i>
-            <span>Twitter</span>
+
+        <!-- Updated Twitter icon from Flaticon -->
+        <a class="social-link" href="https://x.com/collectormanyam" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="Twitter X" class="twitter-x-logo">
+            <span>Twitter (X)</span>
         </a>
-        <a class="social-link" href="https://www.facebook.com/your_username" target="_blank">
-            <i class="fab fa-facebook-f"></i>
+
+        <!-- Facebook link with custom icon -->
+        <a class="social-link" href="https://www.facebook.com/collectormanyam" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
             <span>Facebook</span>
         </a>
-        <a class="social-link" href="https://wa.me/your_whatsapp_number" target="_blank">
-            <i class="fab fa-whatsapp"></i>
+
+        <!-- WhatsApp link with custom icon -->
+        <a class="social-link" href="https://whatsapp.com/channel/0029VaogNXAFXUuhzbvqbs0e" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
             <span>WhatsApp</span>
         </a>
     </div>
-
-    <!-- FontAwesome script for social media icons -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 </html>
